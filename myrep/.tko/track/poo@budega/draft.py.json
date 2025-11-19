@@ -1,0 +1,199 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-06_11-42-09",
+            "content": "@@ -1,116 +0,0 @@\n-class Pessoa:%0A    def __init__(self, nome:str):%0A        self.nome = nome%0A    def __str__(self) -%3E str:%0A        retur\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-06_11-58-58",
+            "content": "@@ -113,148 +113,4 @@\n etur\n-n self.nome%0A    %0Aclass Budega:%0A    def __init__(self):%0A        self.caixas: list%5BPessoa%7C None%5D = %5B%5D      %0A        self.espera: list%5BPessoa%5D = %5B%5D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-06_12-01-47",
+            "content": "@@ -165,24 +165,8 @@\n self\n-, numCaixas: int\n ):%0A \n@@ -219,56 +219,8 @@\n    %0A\n-        for i in range(numCaixas):%0A            %0A\n     \n@@ -249,14 +249,12 @@\n Pessoa%5D = %5B%5D\n-  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-11-06_12-07-36",
+            "content": "@@ -243,17 +243,17 @@\n     for \n-_\n+i\n  in rang\n@@ -282,32 +282,8 @@\n     \n-self.caixas.append(None)\n %0A   \n@@ -323,98 +323,4 @@\n %5B%5D  \n-%0A%0A    def __str__(self) -%3E str:%0A        return f%22Caixas:%7Bself.caixas%7D/nEsepera: %7Bself.espera%7D%22\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-11-06_12-09-35",
+            "content": "@@ -441,78 +441,4 @@\n ra%7D%22\n-%0A%0Apessoa = Pessoa(%22Maria%22)%0Aprint(pessoa)%0A%0Abudega = Budega(5)%0Aprint(budega)\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-11-06_12-10-32",
+            "content": "@@ -502,37 +502,8 @@\n (5)%0A\n-budega.espera.append(pessoa)%0A\n prin\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-11-06_12-12-09",
+            "content": "@@ -379,124 +379,8 @@\n tr:%0A\n-        caixas = %22, %22.join(%5Bstr(x) for x in self.caixas%5D)%0A        espera = %22, %22.join(%5Bstr(X) for x in self.espera%5D)%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-11-06_12-17-18",
+            "content": "@@ -457,33 +457,33 @@\n  %22, %22.join(%5Bstr(\n-x\n+X\n ) for x in self.\n@@ -516,16 +516,21 @@\n Caixas:%7B\n+self.\n caixas%7D/\n@@ -536,14 +536,21 @@\n /nEs\n+e\n pera:\n-%7B\n+ %7Bself.\n espe\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-11-06_12-18-28",
+            "content": "@@ -519,17 +519,16 @@\n xas:\n-%5B\n %7Bcaixas%7D\n %5D/nE\n@@ -523,17 +523,16 @@\n %7Bcaixas%7D\n-%5D\n /nEspera\n@@ -536,17 +536,16 @@\n era:\n-%5B\n %7Bespera%7D\n %5D%22%0A%0A\n@@ -540,17 +540,16 @@\n %7Bespera%7D\n-%5D\n %22%0A%0Apesso\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-11-06_12-23-36",
+            "content": "@@ -527,17 +527,16 @@\n ixas%7D%5D/n\n- \n Espera:%5B\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-11-06_12-23-44",
+            "content": "@@ -529,10 +529,11 @@\n as%7D%5D\n-%5Cn\n+/n \n Espe\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-11-06_12-23-56",
+            "content": "@@ -406,34 +406,8 @@\n oin(\n-%22-----%22 if x is None else \n %5Bstr\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-11-06_12-25-45",
+            "content": "@@ -402,17 +402,16 @@\n  %22.join(\n-%5B\n %22-----%22 \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-11-06_12-26-02",
+            "content": "@@ -429,16 +429,17 @@\n ne else \n+%5B\n str(x) f\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-11-06_12-26-12",
+            "content": "@@ -379,79 +379,8 @@\n tr:%0A\n-        self.caixas = %5BPessoa(%22Maria%22), None, Pessoa(%22Joao%22)%5D%0A        %0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-11-06_12-27-20",
+            "content": "@@ -349,84 +349,8 @@\n   %0A%0A\n-    def enter(self, pessoa:Pessoa):%0A        self.espera.append(pessoa)%0A    %0A\n     \n@@ -715,63 +715,38 @@\n ga.e\n-nter(Pessoa(%22Joaquina%22))%0Abudega.enter(Pessoa(%22Cirilo%22))    \n+spera.append(pessoa)%0Aprint(budega)\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-11-06_12-32-15",
+            "content": "@@ -849,19 +849,5 @@\n )   \n-%0Aprint(budega)\n  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-11-06_12-32-29",
+            "content": "@@ -837,47 +837,14 @@\n oa(%22\n-jaime%22))%0Abudega.enter(Pessoa(%22elizabeth\n+Cirilo\n %22)) \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-11-06_12-33-06",
+            "content": "@@ -443,32 +443,94 @@\n _(self) -%3E str:%0A\n+        self.caixas = %5BPessoa(%22Maria%22), None, Pessoa(%22Joao%22)%5D%0A\n         %0A       \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-11-06_12-33-21",
+            "content": "@@ -658,16 +658,56 @@\n era%7D%5D%22%0A%0A\n+pessoa = Pessoa(%22Maria%22)%0Aprint(pessoa)%0A%0A\n budega =\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-11-06_12-33-30",
+            "content": "@@ -419,112 +419,8 @@\n soa)\n-%0A%0A    def call(self, index: int):%0A        self.caixas%5Bindex%5D = self.espera%5B0%5D%0A        del self.espera%5B0%5D\n %0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-11-06_12-35-10",
+            "content": "@@ -885,23 +885,8 @@\n    %0A\n-budega.call(2)%0A\n prin\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-11-06_12-35-46",
+            "content": "@@ -453,307 +453,8 @@\n t):%0A\n-        if index %3C 0 or index %3E= len(self.caixas):%0A            print(%22indice inexistente%22)%0A            return%0A        if self.caixas%5Bindex%5D is not None:%0A            print(%22Caixa ocupado%22)%0A            return%0A        if len(self.espera) == 0:%0A            print(%22ninguem esperando%22)%0A            return%0A\n     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-11-06_12-39-50",
+            "content": "@@ -822,518 +822,8 @@\n a%5B0%5D\n-%0A%0A    def finish(self, index:int):%0A        if index %3C 0 or index %3E= len(self.caixas):%0A            print(%22indice inexistente%22)%0A            return%0A        if self.caixas%5Bindex%5D is not None:%0A            print(%22Caixa ocupado%22)%0A            return%0A        self.caixas%5Bindex%5D = None %0A%0A    def giveUp(self, nome: str) -%3E Pessoa%7C None:%0A        for i, pessoa in enumerate(self.espera):%0A            if pessoa.nome == nome:%0A                aux = self.espera%5Bi%5D%0A                del self.espera%5Bi%5D%0A                return aux\n %0A   \n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-11-06_12-51-34",
+            "content": "@@ -1709,23 +1709,8 @@\n (2)%0A\n-budega.call(3)%0A\n prin\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-11-06_12-52-30",
+            "content": "@@ -1724,23 +1724,8 @@\n (3)%0A\n-budega.call(4)%0A\n prin\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-06_12-52-45",
+            "content": "@@ -39,13 +39,67 @@\n ome:\n- \n str)\n+:%0A        self.nome = nome%0A    def __str__(self) -%3E str\n :%0A  \n@@ -96,32 +96,39 @@\n -%3E str:%0A        \n+return \n self.nome: str =\n@@ -124,21 +124,1221 @@\n nome\n-: str = nome%0A\n+%0A    %0Aclass Budega:%0A    def __init__(self, numCaixas: int):%0A        self.caixas: list%5BPessoa%7C None%5D = %5B%5D      %0A        for _ in range(numCaixas):%0A            self.caixas.append(None)%0A        self.espera: list%5BPessoa%5D = %5B%5D  %0A%0A    def enter(self, pessoa:Pessoa):%0A        self.espera.append(pessoa)%0A%0A    def call(self, index: int):%0A        if index %3C 0 or index %3E= len(self.caixas):%0A            print(%22indice inexistente%22)%0A            return%0A        if self.caixas%5Bindex%5D is not None:%0A            print(%22Caixa ocupado%22)%0A            return%0A        if len(self.espera) == 0:%0A            print(%22ninguem esperando%22)%0A            return%0A        self.caixas%5Bindex%5D = self.espera%5B0%5D%0A        del self.espera%5B0%5D%0A%0A    def finish(self, index:int):%0A        if index %3C 0 or index %3E= len(self.caixas):%0A            print(%22indice inexistente%22)%0A            return%0A        if self.caixas%5Bindex%5D is not None:%0A            print(%22Caixa ocupado%22)%0A            return%0A        self.caixas%5Bindex%5D = None %0A%0A    def giveUp(self, nome: str) -%3E Pessoa%7C None:%0A        for i, pessoa in enumerate(self.espera):%0A            if pessoa.nome == nome:%0A                aux = self.espera%5Bi%5D%0A                del self.espera%5Bi%5D%0A                return aux%0A    \n %0A   \n@@ -1355,16 +1355,23 @@\n __(self)\n+ -%3E str\n :%0A      \n@@ -1368,28 +1368,389 @@\n tr:%0A        \n-return self.nome\n+%0A        caixas = %22, %22.join(%5B%22-----%22 if x is None else str(x) for x in self.caixas%5D)%0A        espera = %22, %22.join(%5Bstr(x) for x in self.espera%5D)%0A        return f%22Caixas:%5B%7Bcaixas%7D%5D%5CnEspera:%5B%7Bespera%7D%5D%22%0A%0Abudega = Budega(5)%0Abudega.enter(Pessoa(%22Joaquina%22))%0Abudega.enter(Pessoa(%22jaime%22))%0Abudega.enter(Pessoa(%22elizabeth%22))   %0Abudega.call(2)%0Abudega.call(3)%0Abudega.call(4)%0Aprint(budega) \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-06_12-57-13",
+            "content": "@@ -124,219 +124,4 @@\n nome\n-%0A%0Aclass Budega:%0A    def __init__(self, num_caixas: int):%0A        self.espera: list%5BPessoa%5D = %5B%5D%0A        self.caixas: list%5BPessoa %7C None%5D = %5B%5D%0A%0A        for i in range(num_caixas):%0A            self.caixas.append(None)\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-06_12-57-30",
+            "content": "@@ -339,774 +339,4 @@\n one)\n-%0A    %0A    def arrive(self, pessoa: Pessoa):%0A        self.espera.append(pessoa)%0A%0A    def call(self, index: int):%0A        if index %3C 0 or index %3E= len(self.caixas):%0A            print(%22Index inexistente%22)%0A            return%0A        if self.caixas%5Bindex%5D is not None:%0A            print(%22fail: caixa ocupado%22)%0A            return%0A        if len(self.espera) == 0:%09%0A            print(%22fail: sem clientes%22)%0A            return%0A        self.caixas%5Bindex%5D = self.espera%5B0%5D%0A        del self.espera%5B0%5D%0A%0A    def finish(self, index: int):%0A        if index %3C 0 or index %3E= len(self.caixas):%0A            print(%22fail: caixa inexistente%22)%0A            return%0A        if self.caixas%5Bindex%5D is None:%0A            print(%22fail: caixa vazio%22)%0A            return%0A        self.caixas%5Bindex%5D = None%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-11-06_12-59-45",
+            "content": "@@ -1109,494 +1109,4 @@\n one%0A\n-%0A    def give_up(self, nome: str):%0A        for i, pessoa in enumerate(self.espera):%0A            if pessoa.nome == nome:%0A                aux = self.espera%5Bi%5D%0A                del self.espera%5Bi%5D%0A                return aux%0A        return None%0A%0A    def __str__(self):%0A        caixas = %22, %22.join(%5B%22-----%22 if x is None%0A                            else str(x) for x in self.caixas%5D)%0A        espera = %22, %22.join(%5Bstr(x) for x in self.espera%5D)%0A%0A        return f%22Caixas: %5B%7Bcaixas%7D%5D%5CnEspera: %5B%7Bespera%7D%5D%22\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-11-06_13-06-47",
+            "content": "@@ -1599,157 +1599,4 @@\n a%7D%5D%22\n-%0A    %0Adef main():%0A    budega: Budega %7C None = None%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split(%22 %22)%0Amain()\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-11-06_13-08-10",
+            "content": "@@ -1617,15 +1617,139 @@\n ():%0A    \n+budega: Budega %7C None = None%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split(%22 %22)\n %0Amain()\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-06_13-08-35",
+            "content": "@@ -1621,132 +1621,8 @@\n     \n-budega: Budega %7C None = None%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split(%22 %22)\n %0Amai\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-06_13-08-47",
+            "content": "@@ -1,1783 +1,81 @@\n-class Pessoa:%0A    def __init__(self, nome: str):%0A        self.nome: str = nome%0A%0A    def __str__(self):%0A        return self.nome%0A%0Aclass Budega:%0A    def __init__(self, num_caixas: int):%0A        self.espera: list%5BPessoa%5D = %5B%5D%0A        self.caixas: list%5BPessoa %7C None%5D = %5B%5D%0A%0A        for i in range(num_caixas):%0A            self.caixas.append(None)%0A    %0A    def arrive(self, pessoa: Pessoa):%0A        self.espera.append(pessoa)%0A%0A    def call(self, index: int):%0A        if index %3C 0 or index %3E= len(self.caixas):%0A            print(%22Index inexistente%22)%0A            return%0A        if self.caixas%5Bindex%5D is not None:%0A            print(%22fail: caixa ocupado%22)%0A            return%0A        if len(self.espera) == 0:%09%0A            print(%22fail: sem clientes%22)%0A            return%0A        self.caixas%5Bindex%5D = self.espera%5B0%5D%0A        del self.espera%5B0%5D%0A%0A    def finish(self, index: int):%0A        if index %3C 0 or index %3E= len(self.caixas):%0A            print(%22fail: caixa inexistente%22)%0A            return%0A        if self.caixas%5Bindex%5D is None:%0A            print(%22fail: caixa vazio%22)%0A            return%0A        self.caixas%5Bindex%5D = None%0A%0A    def give_up(self, nome: str):%0A        for i, pessoa in enumerate(self.espera):%0A            if pessoa.nome == nome:%0A                aux = self.espera%5Bi%5D%0A                del self.espera%5Bi%5D%0A                return aux%0A        return None%0A%0A    def __str__(self):%0A        caixas = %22, %22.join(%5B%22-----%22 if x is None%0A                            else str(x) for x in self.caixas%5D)%0A        espera = %22, %22.join(%5Bstr(x) for x in self.espera%5D)%0A%0A        return f%22Caixas: %5B%7Bcaixas%7D%5D%5CnEspera: %5B%7Bespera%7D%5D%22%0A    %0Adef main():%0A    budega: Budega %7C None = None%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split(%22 %22)%0A%0A        if args%5B0%5D == %22end%22:%0A\n+@@ -1745,149 +1745,8 @@%0A %2522 %2522)%0A-%250A%250A     if args%255B0%255D == %2522end%2522:%250A\n     \n@@ -87,17 +87,19 @@\n    break\n-%0A\n+%250A\n         \n@@ -111,23 +111,33 @@\n args\n-%5B0%5D\n+%255B0%255D\n  == \n-%22\n+%2522\n init\n-%22:%0A\n+%2522:%250A\n     \n@@ -162,13 +162,19 @@\n args\n-%5B1%5D)%0A\n+%255B1%255D)%250A\n     \n@@ -206,10 +206,12 @@\n um)%0A\n-main()\n+ %250Amai%0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-06_13-10-25",
+            "content": "@@ -1890,230 +1890,8 @@\n um)%0A\n-        %0A        elif args%5B0%5D == %22arrive%22:%0A            if budega is not None:%0A                nome = args%5B1%5D%0A                budega.arrive(Pessoa(nome))%0A            else:%0A                print(%22fail: budega n%C3%A3o iniciada%22)%0A\n main\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-06_13-12-38",
+            "content": "@@ -2055,16 +2055,17 @@\n     else\n+:\n %0A       \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-11-06_13-12-57",
+            "content": "@@ -2055,17 +2055,16 @@\n     else\n-:\n %0A       \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-11-06_13-14-17",
+            "content": "@@ -2111,490 +2111,8 @@\n da%22)\n-%0A%0A        elif args%5B0%5D == %22call%22:%0A            if budega is not None:%09%0A                index = int(args%5B1%5D)%0A                budega.call(index)%0A            else:%0A                print(%22fail: budega n%C3%A3o iniciada%22)%0A%0A        elif args%5B0%5D == %22finish%22:%0A            if budega is not None:%0A                index = int(args%5B1%5D)%0A                budega.finish(index)%0A            else:%0A                print(%22fail: budega n%C3%A3o iniciada%22)%0A%0A        elif args%5B0%5D == %22show%22:%0A            print(budega)\n %0Amai\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-11-06_13-15-11",
+            "content": "class Pessoa:\n    def __init__(self, nome: str):\n        self.nome: str = nome\n\n    def __str__(self):\n        return self.nome\n\nclass Budega:\n    def __init__(self, num_caixas: int):\n        self.espera: list[Pessoa] = []\n        self.caixas: list[Pessoa | None] = []\n\n        for i in range(num_caixas):\n            self.caixas.append(None)\n    \n    def arrive(self, pessoa: Pessoa):\n        self.espera.append(pessoa)\n\n    def call(self, index: int):\n        if index < 0 or index >= len(self.caixas):\n            print(\"Index inexistente\")\n            return\n        if self.caixas[index] is not None:\n            print(\"fail: caixa ocupado\")\n            return\n        if len(self.espera) == 0:\t\n            print(\"fail: sem clientes\")\n            return\n        self.caixas[index] = self.espera[0]\n        del self.espera[0]\n\n    def finish(self, index: int):\n        if index < 0 or index >= len(self.caixas):\n            print(\"fail: caixa inexistente\")\n            return\n        if self.caixas[index] is None:\n            print(\"fail: caixa vazio\")\n            return\n        self.caixas[index] = None\n\n    def give_up(self, nome: str):\n        for i, pessoa in enumerate(self.espera):\n            if pessoa.nome == nome:\n                aux = self.espera[i]\n                del self.espera[i]\n                return aux\n        return None\n\n    def __str__(self):\n        caixas = \", \".join([\"-----\" if x is None\n                            else str(x) for x in self.caixas])\n        espera = \", \".join([str(x) for x in self.espera])\n\n        return f\"Caixas: [{caixas}]\\nEspera: [{espera}]\"\n    \ndef main():\n    budega: Budega | None = None\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split(\" \")\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            num = int(args[1])\n            budega = Budega(num)\n        \n        elif args[0] == \"arrive\":\n            if budega is not None:\n                nome = args[1]\n                budega.arrive(Pessoa(nome))\n            else:\n                print(\"fail: budega n\u00e3o iniciada\")\n\n        elif args[0] == \"call\":\n            if budega is not None:\t\n                index = int(args[1])\n                budega.call(index)\n            else:\n                print(\"fail: budega n\u00e3o iniciada\")\n\n        elif args[0] == \"finish\":\n            if budega is not None:\n                index = int(args[1])\n                budega.finish(index)\n            else:\n                print(\"fail: budega n\u00e3o iniciada\")\n\n        elif args[0] == \"show\":\n            print(budega)\nmain()",
+            "lines": "92"
+        }
+    ]
+}

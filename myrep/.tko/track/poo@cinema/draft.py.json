@@ -1,0 +1,239 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-15_13-54-42",
+            "content": "@@ -1,134 +0,0 @@\n-class Cliente:%0A    def __init__(self, id: str, telefone: int) -%3E None:%0A        self.id: str = id%0A        self.telefone: int = telefone\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-16_19-40-05",
+            "content": "@@ -131,15 +131,4 @@\n fone\n-%0A%0A%0A        \n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-16_19-44-52",
+            "content": "@@ -133,18 +133,13 @@\n ne%0A%0A\n+%0A\n     \n-def %0A\n+ \n    \n- %0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2025-11-16_19-45-22",
+            "content": "@@ -141,65 +141,10 @@\n def \n-__str__(self):%0A        return f%22%7Bself.id%7D:%7Bself.telefone%7D%22 %0A\n+%0A    \n %0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2025-11-16_19-45-47",
+            "content": "@@ -200,66 +200,6 @@\n e%7D%22 \n-%0A    %0Aclass Sala:%0A%0Adef main():%0A    sala: Sala%0A%0A    %0A%0A%0Amain()\n %0A%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2025-11-16_19-47-00",
+            "content": "@@ -231,26 +231,28 @@\n ():%0A\n-%0A%0A\n     \n-while True:%0A\n+sala: Sala%0A%0A    \n %0A%0A%0Am\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-11-16_19-48-56",
+            "content": "@@ -249,136 +249,8 @@\n ue:%0A\n-        line = input()%0A        print(%22$%22 + line)%0A        args = line.split(%22 %22)%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A\n %0A%0A%0Am\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-11-16_19-50-40",
+            "content": "@@ -202,16 +202,27 @@\n %22 %0A    %0A\n+class Sala:\n %0A%0Adef ma\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-11-16_19-51-29",
+            "content": "@@ -206,64 +206,8 @@\n    %0A\n-class Sala:%0A    def __init__(self) -%3E None:%0A        self\n %0A%0Ade\n@@ -217,16 +217,17 @@\n ain():%0A%0A\n+%0A\n     whil\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-11-16_19-52-12",
+            "content": "@@ -239,20 +239,8 @@\n self\n-, capacidade\n ) -%3E\n@@ -262,37 +262,8 @@\n self\n-.capacidade: int = capacidade\n %0A%0Ade\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-11-16_19-52-57",
+            "content": "@@ -247,21 +247,16 @@\n pacidade\n-: int\n ) -%3E Non\n@@ -303,36 +303,8 @@\n dade\n-%0A        self.assentos: list\n %0A%0Ade\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-11-16_19-53-57",
+            "content": "@@ -336,60 +336,8 @@\n list\n-%5BCliente %7C None%5D = %5BNone for _ in range(capacidade)%5D\n %0A%0Ade\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-11-16_19-56-02",
+            "content": "@@ -389,66 +389,8 @@\n e)%5D%0A\n-    %0A    def verificar(self, index: int) -%3E bool:%0A        \n %0Adef\n@@ -548,21 +548,8 @@\n ak%0A%0A\n-        elif:\n %0A%0Ama\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-11-16_19-57-47",
+            "content": "@@ -447,113 +447,8 @@\n     \n-if index %3E len(self.assentos):%0A            return False%0A        if index %3E= 0:%0A            return True%0A%0A%0A\n %0Adef\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-11-16_20-00-00",
+            "content": "@@ -547,16 +547,18 @@\n n True%0A%0A\n+%0A%0A\n def main\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-11-16_20-00-21",
+            "content": "@@ -545,21 +545,16 @@\n urn True\n-%0A    \n %0A%0Adef ma\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-11-16_20-01-48",
+            "content": "@@ -726,83 +726,9 @@\n elif\n- args%5B0%5D == %22init%22:%0A            c = int(args%5B1%5D)%0A            sala = Sala(c)\n+:\n %0A%0Ama\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-11-16_20-03-29",
+            "content": "@@ -568,36 +568,8 @@\n ():%0A\n-    sala: Sala %7C None = None\n %0A   \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-11-16_20-03-52",
+            "content": "@@ -831,136 +831,8 @@\n c)%0A%0A\n-        elif args%5B0%5D == %22show%22:%0A            if sala:%0A                print(sala)%0A            else:%0A                print(%22%5B%5D%22)%0A%0A\n main\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-11-16_20-05-33",
+            "content": "@@ -225,16 +225,17 @@\n  def __i\n+n\n it__(sel\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-11-16_20-06-37",
+            "content": "@@ -217,33 +217,32 @@\n ala:%0A    def __i\n-n\n it__(self, capac\n@@ -507,16 +507,17 @@\n        i\n+f\n  index %3E\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-11-16_20-06-45",
+            "content": "@@ -500,33 +500,32 @@\n  False%0A        i\n-f\n  index %3E= 0:%0A   \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-11-16_20-08-04",
+            "content": "@@ -554,117 +554,8 @@\n     \n-%0A    def __str__(self) -%3E str:%0A        return %22%5B%22+%22 %22.join(str(c) if c else %22-%22 for c in self.assentos)+ %22%5D%22 \n %0A%0Ade\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-11-16_20-10-59",
+            "content": "@@ -540,16 +540,17 @@\n   re\n+t\n urn True\n    %0A\n@@ -549,29 +549,8 @@\n True\n-   %0A        %0A        \n %0A   \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-11-16_20-15-42",
+            "content": "@@ -532,25 +532,24 @@\n           re\n-t\n urn True   %0A\n@@ -552,66 +552,8 @@\n    %0A\n-%0A    def procurar(self, name: str) -%3E int:%0A        for i%0A%0A\n     \n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-11-16_20-19-10",
+            "content": "@@ -554,22 +554,67 @@\n   %0A%0A    \n-%0A     \n+def procurar(self, name: str) -%3E int:%0A        for i\n %0A%0A      \n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-11-16_20-19-17",
+            "content": "@@ -548,16 +548,38 @@\n  True   \n+%0A%0A    %0A     %0A%0A        \n %0A       \n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-11-16_20-19-27",
+            "content": "@@ -557,111 +557,12 @@\n     \n-%0A\n     \n-def procurar(self, name: str) -%3E%0A        for i, cliente in enumerate(self.assentos):%0A            %0A\n %0A   \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-11-16_20-25-25",
+            "content": "@@ -659,101 +659,8 @@\n     \n-if cliente is not None and cliente.id == name:%0A                return i%0A            return -1\n %0A%0A  \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-11-16_20-26-09",
+            "content": "@@ -594,13 +594,8 @@\n ) -%3E\n- int:\n %0A   \n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-11-16_20-26-25",
+            "content": "@@ -558,141 +558,8 @@\n    %0A\n-    def reservar(self, id: str. telefone:int, index: int) -%3E bool:%0A        if not self.verificar(index):%0A            print(%22fail%22)%0A%0A%0A\n     \n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-11-16_20-29-10",
+            "content": "@@ -686,249 +686,11 @@\n fail\n-: cadeira nao existe%22)%0A        if self.procurar(id) != -1:%0A            print(%22fail: cliente j%C3%A1 esta no cinema%22)%0A        if self.assentos%5Bindex%5D is not None:%0A            print(%22fail: cadeira ja esta ocupada%22)%0A            return False%0A        \n+%22)%0A\n %0A%0A  \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-16_20-33-31",
+            "content": "@@ -927,73 +927,8 @@\n     \n-self.assentos%5Bindex%5D = Clientes(id, telefone)%0A        return True\n %0A%0A  \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-16_20-38-59",
+            "content": "@@ -576,33 +576,33 @@\n ar(self, id: str\n-,\n+.\n  telefone:int, i\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-16_20-39-15",
+            "content": "@@ -1585,170 +1585,8 @@\n c)%0A%0A\n-        elif args%5B0%5D == %22reserve%22:%0A            a = str(args%5B1%5D)%0A            b = int(args%5B2%5D)%0A            ind = int(args%5B3%5D)%0A            sala.reservar(a, b, ind)%0A%0A\n     \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-16_20-44-02",
+            "content": "@@ -953,16 +953,17 @@\n  Cliente\n+s\n (id, tel\n@@ -1191,21 +1191,16 @@\n urn -1%0A%0A\n-    %0A\n     %0A   \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-16_20-47-16",
+            "content": "@@ -775,17 +775,17 @@\n liente j\n-a\n+%C3%A1\n  esta no\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-11-16_20-47-27",
+            "content": "@@ -779,9 +779,9 @@\n te j\n-%C3%A1\n+a\n  est\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-11-16_20-47-32",
+            "content": "@@ -775,17 +775,17 @@\n liente j\n-a\n+%C3%A1\n  esta no\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-11-16_20-47-50",
+            "content": "@@ -779,9 +779,9 @@\n te j\n-%C3%A1\n+a\n  est\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-11-16_20-48-21",
+            "content": "@@ -1198,73 +1198,8 @@\n     \n-def cancelar(self, id: str) -%3Ebool:%0A        c = self.procurar(id)\n %0A   \n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-11-16_20-55-54",
+            "content": "@@ -1264,95 +1264,8 @@\n id)%0A\n-        if c == -1:%0A            print(%22fail: cliente nao esta no cinema%22)%0A            %0A\n     \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-16_20-59-41",
+            "content": "@@ -1162,33 +1162,16 @@\n     retu\n-%0A                \n rn i%0A   \n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-11-16_21-04-56",
+            "content": "@@ -1162,16 +1162,33 @@\n     retu\n+%0A                \n rn i%0A   \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-16_21-07-31",
+            "content": "@@ -1338,85 +1338,8 @@\n a%22)%0A\n-            return False%0A        self.assentos%5Bc%5D = None%0A        return True%0A\n     \n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-11-16_21-08-54",
+            "content": "@@ -50,24 +50,32 @@\n lefone: int)\n+ -%3E None\n :%0A        se\n@@ -195,18 +195,22 @@\n lefone%7D%22\n-%0A%0A\n+ %0A    \n %0Aclass S\n@@ -253,16 +253,24 @@\n de: int)\n+ -%3E None\n :%0A      \n@@ -385,16 +385,20 @@\n idade)%5D%0A\n+    \n %0A    def\n@@ -549,206 +549,16 @@\n True\n-%0A%0A\n    \n- def procurar(self, name: str) -%3E int:%0A        for i, cliente in enumerate(self.assentos):%0A            if cliente is not None and cliente.id == name:%0A                return i%0A        return -1%0A\n+%0A    \n %0A   \n@@ -595,17 +595,16 @@\n elefone:\n- \n int, ind\n@@ -709,33 +709,8 @@\n e%22)%0A\n-            return False%0A\n     \n@@ -775,17 +775,17 @@\n liente j\n-a\n+%C3%A1\n  esta no\n@@ -798,33 +798,8 @@\n a%22)%0A\n-            return False%0A\n     \n@@ -981,32 +981,233 @@\n    return True%0A%0A\n+    def procurar(self, name: str) -%3E int:%0A        for i, cliente in enumerate(self.assentos):%0A            if cliente is not None and cliente.id == name:%0A                return i%0A            return -1%0A%0A\n     def cancelar\n@@ -1220,25 +1220,24 @@\n  id: str) -%3E\n- \n bool:%0A      \n@@ -1403,32 +1403,49 @@\n     return True%0A\n+            %0A    \n %0A    def __str__\n@@ -1442,32 +1442,39 @@\n ef __str__(self)\n+ -%3E str\n :%0A        return\n@@ -1477,19 +1477,17 @@\n turn %22%5B%22\n- + \n++\n %22 %22.join\n@@ -1535,15 +1535,14 @@\n tos)\n- \n + %22%5D%22\n-%0A\n+ \n %0A%0Ade\n@@ -1551,20 +1551,16 @@\n main():%0A\n-    \n     sala\n@@ -1576,28 +1576,24 @@\n None = None%0A\n-    \n     while Tr\n@@ -1604,20 +1604,16 @@\n         \n-    \n line = i\n@@ -1619,20 +1619,16 @@\n input()%0A\n-    \n         \n@@ -1653,20 +1653,16 @@\n         \n-    \n args = l\n@@ -1677,36 +1677,32 @@\n t(%22 %22)%0A%0A        \n-    \n if args%5B0%5D == %22e\n@@ -1718,20 +1718,16 @@\n         \n-    \n break%0A%0A \n@@ -1725,36 +1725,34 @@\n  break%0A%0A        \n-    \n+el\n if args%5B0%5D == %22i\n@@ -1765,28 +1765,24 @@\n             \n-    \n c = int(args\n@@ -1778,36 +1778,32 @@\n  = int(args%5B1%5D)%0A\n-    \n             sala\n@@ -1826,93 +1826,10 @@\n     \n-    if args%5B0%5D == %22cancel%22:%0A                sala.cancelar(str(args%5B1%5D))%0A%0A            \n+el\n if a\n@@ -1861,21 +1861,17 @@\n         \n-    i\n+a\n  = str(a\n@@ -1894,13 +1894,9 @@\n     \n-    t\n+b\n  = i\n@@ -1907,20 +1907,16 @@\n rgs%5B2%5D)%0A\n-    \n         \n@@ -1946,28 +1946,24 @@\n             \n-    \n sala.reserva\n@@ -1968,12 +1968,12 @@\n var(\n-i, t\n+a, b\n , in\n@@ -1980,28 +1980,26 @@\n d)%0A%0A        \n-    \n+el\n if args%5B0%5D =\n@@ -2016,28 +2016,24 @@\n             \n-    \n if sala:%0A   \n@@ -2041,28 +2041,24 @@\n             \n-    \n print(sala)%0A\n@@ -2057,20 +2057,16 @@\n t(sala)%0A\n-    \n         \n@@ -2087,28 +2087,24 @@\n             \n-    \n print(%22%5B%5D%22)%0A\n@@ -2108,12 +2108,12 @@\n %22)%0A%0A\n-%0A\n main()%0A\n+%0A\n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-11-16_21-09-17",
+            "content": "class Cliente:\n    def __init__(self, id: str, telefone: int):\n        self.id: str = id\n        self.telefone: int = telefone\n\n    def __str__(self):\n        return f\"{self.id}:{self.telefone}\"\n\n\nclass Sala:\n    def __init__(self, capacidade: int):\n        self.capacidade: int = capacidade\n        self.assentos: list[Cliente | None] = [None for _ in range(capacidade)]\n\n    def verificar(self, index: int) -> bool:\n        if index > len(self.assentos):\n            return False\n        if index >= 0:\n            return True\n\n    def procurar(self, name: str) -> int:\n        for i, cliente in enumerate(self.assentos):\n            if cliente is not None and cliente.id == name:\n                return i\n        return -1\n\n    def reservar(self, id: str, telefone: int, index: int) -> bool:\n        if not self.verificar(index):\n            print(\"fail: cadeira nao existe\")\n            return False\n        if self.procurar(id) != -1:\n            print(\"fail: cliente ja esta no cinema\")\n            return False\n        if self.assentos[index] is not None:\n            print(\"fail: cadeira ja esta ocupada\")\n            return False\n        self.assentos[index] = Cliente(id, telefone)\n        return True\n\n    def cancelar(self, id: str) -> bool:\n        c = self.procurar(id)\n        if c == -1:\n            print(\"fail: cliente nao esta no cinema\")\n            return False\n        self.assentos[c] = None\n        return True\n\n    def __str__(self):\n        return \"[\" + \" \".join(str(c) if c else \"-\" for c in self.assentos) + \"]\"\n\n\ndef main():\n        sala: Sala | None = None\n        while True:\n            line = input()\n            print(\"$\" + line)\n            args = line.split(\" \")\n\n            if args[0] == \"end\":\n                break\n\n            if args[0] == \"init\":\n                c = int(args[1])\n                sala = Sala(c)\n\n            if args[0] == \"cancel\":\n                sala.cancelar(str(args[1]))\n\n            if args[0] == \"reserve\":\n                i = str(args[1])\n                t = int(args[2])\n                ind = int(args[3])\n                sala.reservar(i, t, ind)\n\n            if args[0] == \"show\":\n                if sala:\n                    print(sala)\n                else:\n                    print(\"[]\")\n\n\nmain()\n",
+            "lines": "82"
+        }
+    ]
+}

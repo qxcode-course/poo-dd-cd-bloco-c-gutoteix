@@ -1,0 +1,94 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-06_22-53-48",
+            "content": "@@ -1,33 +1 @@\n-class Arrays:%0A%0A    meuArray = %5B%5D\n %0A\n",
+            "lines": "1"
+        },
+        {
+            "label": "2025-11-06_22-57-24",
+            "content": "@@ -1,81 +1,33 @@\n-meu_array = %5B%5D%0Aprint(meu_array)%0A%0Ameu_a\n+class Arrays:%0A%0A    meuA\n rray\n-2\n  = %5B\n-10, 20, 30, 40%5D%0Aprint(meu_array2)\n+%5D\n %0A\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-11-06_23-05-46",
+            "content": "@@ -78,114 +78,4 @@\n y2)%0A\n-%0Ameu_array2 = %5B10, 20, 30, 40%5D%0Atamanho = len(meu_array2)%0Aprint(tamanho)  %0A%0Ameu_array2.pop()%0Aprint(meu_array2)%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-06_23-17-47",
+            "content": "@@ -2,21 +2,16 @@\n eu_array\n-Vazio\n  = %5B%5D%0Apr\n@@ -27,13 +27,8 @@\n rray\n-Vazio\n )%0A%0Am\n@@ -27,32 +27,33 @@\n rray)%0A%0Ameu_array\n+2\n  = %5B10, 20, 30, \n@@ -75,75 +75,55 @@\n rray\n+2\n )%0A%0A\n-tamanho = len(meu_array)%0Aprint(tamanho)  %0A%0Ameu_array.pop()%0Aprint\n+meu_array2 = %5B10, 20, 30, 40%5D%0Atamanho = len\n (meu\n@@ -132,96 +132,29 @@\n rray\n+2\n )%0A\n-%0Ameu_array.insert(0, 5)%0Aprint(meu_array)  %0A%0Ameu_array.insert(0, 5)%0Aprint(meu_array\n+print(tamanho\n )  %0A\n+%0A\n meu_\n@@ -162,14 +162,14 @@\n rray\n+2\n .pop(\n-0\n )%0Apr\n@@ -185,78 +185,7 @@\n rray\n+2\n )%0A\n-%0Ameu_array = %5B10, 20, 30, 40%5D%0Ameu_array.insert(2, 99)  %0Aprint(meu_array)\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-11-06_23-25-35",
+            "content": "@@ -281,32 +281,61 @@\n rray)%0A%0Ameu_array\n+ = %5B10, 20, 30, 40%5D%0Ameu_array\n .insert(2, 99)  \n@@ -355,135 +355,4 @@\n ray)\n-%0A%0Ameu_array.remove(20)  %0Aprint(meu_array)  %0A%0Anomes = %5B%22Augusto%22, %22Senna%22, %22Carlos%22%5D%0Aresultado = %22 - %22.join(nomes)%0Aprint(resultado)%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-11-06_23-33-46",
+            "content": "@@ -457,154 +457,4 @@\n do)%0A\n-%0An = 10%0Ameu_array = list(range(0, n + 1))%0Aprint(meu_array)%0A%0Aimport random  %0A%0Ameu_array = %5Brandom.randint(0, 100) for _ in range(10)%5D%0Aprint(meu_array)%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-11-06_23-40-36",
+            "content": "@@ -607,151 +607,4 @@\n ay)%0A\n-%0Aprint(meu_array%5B0%5D)  %0Aprint(meu_array%5B2%5D)  %0Aprint(meu_array%5B-1%5D)%0A%0Afor i in range(len(meu_array)):%0A    print(f%22%C3%8Dndice %7Bi%7D %E2%86%92 Valor %7Bmeu_array%5Bi%5D%7D%22)%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-11-06_23-48-50",
+            "content": "@@ -674,82 +674,8 @@\n %5D)%0A%0A\n-for valor in meu_array:%0A    print(valor)%0A%0Ameu_array = %5B5, 10, 15, 20, 25%5D%0A\n for \n@@ -728,17 +728,16 @@\n  %7Bi%7D\n-: v\n+ %E2%86%92 V\n alor\n- =\n  %7Bme\n@@ -754,245 +754,4 @@\n %7D%22)%0A\n-%0Ax = 15 %0Aencontrado = False%0A%0Afor elemento in meu_array:%0A    if elemento == x:%0A        encontrado = True%0A        break %0Aif encontrado:%0A    print(f%22O elemento %7Bx%7D foi encontrado no array!%22)%0Aelse:%0A    print(f%22O elemento %7Bx%7D n%C3%A3o est%C3%A1 no array.%22)\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-11-07_00-02-45",
+            "content": "@@ -1070,130 +1070,4 @@\n y.%22)\n-%0A%0Ax = 15%0A%0Aif x in meu_array:%0A    print(f%22O elemento %7Bx%7D est%C3%A1 no array!%22)%0Aelse:%0A    print(f%22O elemento %7Bx%7D n%C3%A3o est%C3%A1 no array.%22)\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-07_00-03-36",
+            "content": "@@ -1196,136 +1196,4 @@\n y.%22)\n-%0A%0Anumeros = %5B1, 2, 3, 4, 5, 6, 7, 8, 9, 10%5D%0Apares = %5B%5D%0A%0Afor n in numeros:%0A    if n %25 2 == 0:%0A        pares.append(n)%0A%0Aprint(pares)%0A%0A\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-07_00-10-07",
+            "content": "@@ -1328,110 +1328,4 @@\n s)%0A%0A\n-numeros = %5B1, 2, 3, 4, 5%5D%0Aquadrados = %5B%5D%0Afor n in numeros:%0A    quadrados.append(n ** 2)%0Aprint(quadrados)%0A%0A\n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-11-07_00-18-02",
+            "content": "@@ -1367,15 +1367,10 @@\n  = %5B\n-n ** 2 \n+%5D%0A\n for \n@@ -1381,18 +1381,46 @@\n  numeros\n-%5D%0A\n+:%0A    quadrados.append(n ** 2)\n %0Aprint(q\n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-11-07_00-23-57",
+            "content": "@@ -1411,108 +1411,4 @@\n s)%0A%0A\n-numeros = %5B10, 20, 30, 30, 40, 30, 50%5D%0Ax = 30%0A%0Anumeros = %5Bn for n in numeros if n != x%5D%0A%0Aprint(numeros)%0A\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-11-07_00-26-28",
+            "content": "@@ -1515,117 +1515,4 @@\n os)%0A\n-%0Anumeros = %5B10, 20, 30, 30, 40, 30, 50%5D%0Ax = 30%0A%0Anumeros = list(filter(lambda n: n != x, numeros))%0A%0Aprint(numeros)\n",
+            "lines": "89"
+        },
+        {
+            "label": "2025-11-07_00-31-27",
+            "content": "@@ -1388,16 +1388,17 @@\n umeros%5D%0A\n+%0A\n print(qu\n@@ -1453,16 +1453,17 @@\n %0Ax = 30%0A\n+%0A\n numeros \n@@ -1495,16 +1495,17 @@\n n != x%5D%0A\n+%0A\n print(nu\n@@ -1516,23 +1516,8 @@\n s)%0A%0A\n-import random%0A%0A\n nume\n@@ -1539,1270 +1539,93 @@\n 30, \n-2\n+3\n 0, 40, \n-50%5D%0A%0Aprint(%22Lista original:%22, numeros)%0A%0A# ------------------ BUSCA ------------------%0Aprint(%22%5Cn=== BUSCA ===%22)%0Aprint(%2220 est%C3%A1 na lista?%22, 20 in numeros)%0Aif 30 in numeros:%0A    print(%22%C3%8Dndice do 30:%22, numeros.index(30))%0Aprint(%22Quantidade de vezes que 20 aparece:%22, numeros.count(20))%0A%0A#------------------ REMO%C3%87%C3%83O ------------------%0A%0Aif 20 in numeros:%0A    numeros.remove(20)%0A    print(%22Depois do remove(20):%22, numeros)%0A%0Aremovido = numeros.pop()%0Aprint(%22Elemento removido com pop():%22, removido)%0Aprint(%22Depois do pop():%22, numeros)%0A%0Atemp = numeros.copy()%0Atemp.clear()%0Aprint(%22Depois do clear():%22, temp)%0A%0A# ------------------ ORDENA%C3%87%C3%83O ------------------%0Anumeros = %5B30, 10, 50, 20%5D%0Aprint(%22Antes de ordenar:%22, numeros)%0A%0A# sort() %E2%86%92 ordena no local%0Anumeros.sort()%0Aprint(%22Depois do sort():%22, numeros)%0A%0A# sorted() %E2%86%92 retorna nova lista ordenada%0Anumeros2 = %5B30, 10, 50, 20%5D%0Aprint(%22Com sorted():%22, sorted(numeros2))%0Aprint(%22Original ap%C3%B3s sorted():%22, numeros2)%0A%0A#----------------- EMBARALHAMENTO ------------------%0A%0Anumeros = %5B1, 2, 3, 4, 5%5D%0Arandom.shuffle(numeros)  # no local%0Aprint(%22Depois do shuffle():%22, numeros)%0A%0Anumeros2 = %5B1, 2, 3, 4, 5%5D%0Aembaralhada = random.sample(numeros2, len(numeros2))  %0Aprint(%22Com sample():%22, embaralhada)%0Aprint(%22Original ap%C3%B3s sample():%22, \n+30, 50%5D%0Ax = 30%0A%0Anumeros = list(filter(lambda n: n != x, numeros))%0A%0Aprint(\n numeros\n-2\n )\n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-11-07_00-38-41",
+            "content": "@@ -1559,16 +1559,17 @@\n 40, 50%5D%0A\n+%0A\n print(%22L\n@@ -1594,16 +1594,17 @@\n umeros)%0A\n+%0A\n # ------\n@@ -1666,18 +1666,16 @@\n A ===%22)%0A\n-%0A%0A\n print(%222\n@@ -1708,17 +1708,16 @@\n umeros)%0A\n-%0A\n if 30 in\n@@ -1775,19 +1775,8 @@\n 30))\n-%0A%0A# count()\n %0Apri\n@@ -1834,25 +1834,24 @@\n ount(20))%0A%0A#\n- \n ------------\n@@ -1887,35 +1887,8 @@\n ----\n-%0Aprint(%22%5Cn=== REMO%C3%87%C3%83O ===%22)\n %0A%0Aif\n@@ -1971,17 +1971,16 @@\n meros)%0A%0A\n-%0A\n removido\n@@ -2260,24 +2260,51 @@\n , numeros)%0A%0A\n+# sort() %E2%86%92 ordena no local%0A\n numeros.sort\n@@ -2335,32 +2335,73 @@\n ():%22, numeros)%0A%0A\n+# sorted() %E2%86%92 retorna nova lista ordenada%0A\n numeros2 = %5B30, \n@@ -2600,16 +2600,28 @@\n numeros)\n+  # no local\n %0Aprint(%22\n@@ -2680,16 +2680,16 @@\n , 4, 5%5D%0A\n-\n embaralh\n@@ -2733,16 +2733,17 @@\n eros2)) \n+ \n %0Aprint(%22\n",
+            "lines": "137"
+        },
+        {
+            "label": "2025-11-07_00-39-32",
+            "content": "@@ -1524,17 +1524,16 @@\n random%0A%0A\n-%0A\n numeros \n@@ -1559,17 +1559,16 @@\n 40, 50%5D%0A\n-%0A\n print(%22L\n@@ -1593,17 +1593,16 @@\n umeros)%0A\n-%0A\n # ------\n@@ -1665,16 +1665,17 @@\n  ===%22)%0A%0A\n+%0A\n print(%222\n@@ -1708,16 +1708,17 @@\n umeros)%0A\n+%0A\n if 30 in\n@@ -1774,16 +1774,25 @@\n x(30))%0A%0A\n+# count()\n %0Aprint(%22\n@@ -1925,17 +1925,16 @@\n  ===%22)%0A%0A\n-%0A\n if 20 in\n@@ -2011,16 +2011,17 @@\n meros)%0A%0A\n+%0A\n removido\n@@ -2121,17 +2121,16 @@\n meros)%0A%0A\n-%0A\n temp = n\n@@ -2245,38 +2245,8 @@\n ---%0A\n-print(%22%5Cn=== ORDENA%C3%87%C3%83O ===%22)%0A%0A\n nume\n@@ -2305,17 +2305,16 @@\n meros)%0A%0A\n-%0A\n numeros.\n@@ -2467,26 +2467,24 @@\n numeros2)%0A%0A#\n- -\n ------------\n@@ -2526,42 +2526,8 @@\n ----\n-%0Aprint(%22%5Cn=== EMBARALHAMENTO ===%22)\n %0A%0Anu\n@@ -2577,20 +2577,8 @@\n ros)\n-  # no local\n %0Apri\n@@ -2698,33 +2698,8 @@\n 2)) \n- # nova lista embaralhada\n %0Apri\n@@ -2761,21 +2761,20 @@\n ample():%22, numeros2)\n-%0A\n",
+            "lines": "140"
+        },
+        {
+            "label": "2025-11-07_00-40-24",
+            "content": "meu_arrayVazio = []\nprint(meu_arrayVazio)\n\nmeu_array = [10, 20, 30, 40]\nprint(meu_array)\n\ntamanho = len(meu_array)\nprint(tamanho)  \n\nmeu_array.pop()\nprint(meu_array)\n\nmeu_array.insert(0, 5)\nprint(meu_array)  \n\nmeu_array.insert(0, 5)\nprint(meu_array)  \nmeu_array.pop(0)\nprint(meu_array)\n\nmeu_array.insert(2, 99)  \nprint(meu_array)\n\nmeu_array.remove(20)  \nprint(meu_array)  \n\nnomes = [\"Augusto\", \"Senna\", \"Carlos\"]\nresultado = \" - \".join(nomes)\nprint(resultado)\n\nn = 10\nmeu_array = list(range(0, n + 1))\nprint(meu_array)\n\nimport random  \n\nmeu_array = [random.randint(0, 100) for _ in range(10)]\nprint(meu_array)\n\nprint(meu_array[0])  \nprint(meu_array[2])  \nprint(meu_array[-1])\n\nfor valor in meu_array:\n    print(valor)\n\nmeu_array = [5, 10, 15, 20, 25]\nfor i in range(len(meu_array)):\n    print(f\"\u00cdndice {i}: valor = {meu_array[i]}\")\n\nx = 15 \nencontrado = False\n\nfor elemento in meu_array:\n    if elemento == x:\n        encontrado = True\n        break \nif encontrado:\n    print(f\"O elemento {x} foi encontrado no array!\")\nelse:\n    print(f\"O elemento {x} n\u00e3o est\u00e1 no array.\")\n\nx = 15\n\nif x in meu_array:\n    print(f\"O elemento {x} est\u00e1 no array!\")\nelse:\n    print(f\"O elemento {x} n\u00e3o est\u00e1 no array.\")\n\nnumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\npares = []\n\nfor n in numeros:\n    if n % 2 == 0:\n        pares.append(n)\n\nprint(pares)\n\nnumeros = [1, 2, 3, 4, 5]\nquadrados = [n ** 2 for n in numeros]\nprint(quadrados)\n\nnumeros = [10, 20, 30, 30, 40, 30, 50]\nx = 30\nnumeros = [n for n in numeros if n != x]\nprint(numeros)\n\nimport random\n\n\nnumeros = [10, 20, 30, 20, 40, 50]\n\nprint(\"Lista original:\", numeros)\n\n# ------------------ BUSCA ------------------\nprint(\"\\n=== BUSCA ===\")\n\nprint(\"20 est\u00e1 na lista?\", 20 in numeros)\nif 30 in numeros:\n    print(\"\u00cdndice do 30:\", numeros.index(30))\n\n\nprint(\"Quantidade de vezes que 20 aparece:\", numeros.count(20))\n\n# ------------------ REMO\u00c7\u00c3O ------------------\nprint(\"\\n=== REMO\u00c7\u00c3O ===\")\n\n\nif 20 in numeros:\n    numeros.remove(20)\n    print(\"Depois do remove(20):\", numeros)\n\nremovido = numeros.pop()\nprint(\"Elemento removido com pop():\", removido)\nprint(\"Depois do pop():\", numeros)\n\n\ntemp = numeros.copy()\ntemp.clear()\nprint(\"Depois do clear():\", temp)\n\n# ------------------ ORDENA\u00c7\u00c3O ------------------\nprint(\"\\n=== ORDENA\u00c7\u00c3O ===\")\n\nnumeros = [30, 10, 50, 20]\nprint(\"Antes de ordenar:\", numeros)\n\n\nnumeros.sort()\nprint(\"Depois do sort():\", numeros)\n\nnumeros2 = [30, 10, 50, 20]\nprint(\"Com sorted():\", sorted(numeros2))\nprint(\"Original ap\u00f3s sorted():\", numeros2)\n\n# ------------------ EMBARALHAMENTO ------------------\nprint(\"\\n=== EMBARALHAMENTO ===\")\n\nnumeros = [1, 2, 3, 4, 5]\nrandom.shuffle(numeros)  # no local\nprint(\"Depois do shuffle():\", numeros)\n\nnumeros2 = [1, 2, 3, 4, 5]\nembaralhada = random.sample(numeros2, len(numeros2))  # nova lista embaralhada\nprint(\"Com sample():\", embaralhada)\nprint(\"Original ap\u00f3s sample():\", numeros2)\n",
+            "lines": "146"
+        }
+    ]
+}
